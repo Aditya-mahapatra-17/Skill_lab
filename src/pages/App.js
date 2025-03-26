@@ -5,10 +5,9 @@ import Home from './Home';
 import Movies from './Movies';
 import '../App.css';
 
-
 function App() {
     return (
-        <Router>
+        <Router basename="/Skill_lab"> {/* Add basename here */}
             <NavigationBar />
             <Routes>
                 <Route path="/" element={<Home />} />
