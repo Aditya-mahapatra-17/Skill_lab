@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from '../components/Navbar';
 import Home from './Home';
 import Movies from './Movies';
@@ -7,7 +7,7 @@ import '../App.css';
 
 function App() {
     return (
-        <Router basename="/Skill_lab"> {/* Add basename here */}
+        <Router>
             <NavigationBar />
             <Routes>
                 <Route path="/" element={<Home />} />
